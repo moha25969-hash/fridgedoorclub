@@ -20,7 +20,7 @@
     var d={};new FormData(form).forEach(function(v,k){if(k!=='photo')d[k]=v});
     new Promise(function(res){var r=new FileReader();r.onload=function(){res(r.result)};r.readAsDataURL(small)}).then(function(u){d.photo=u;
     return fetch('/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})}).then(function(r){
-      if(r.ok){location.href='/thanks'}else{throw 0}
+      if(r.ok){location.href='/thanks.html'}else{throw 0}
     }).catch(function(){
       btn.disabled=false;btn.textContent='Pin it to the fridge';
       msg.textContent='Sorry, honey, something went wrong. Please try again in a minute.';msg.classList.remove('hidden');
