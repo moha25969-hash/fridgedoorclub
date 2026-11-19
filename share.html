@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share your dish — The Fridge Door Club by Mini Bites</title>
+<meta name="description" content="Pin your dish to Grandma's fridge in 30 seconds. No account needed.">
+<link rel="canonical" href="https://fridgedoorclub.com/share">
+<meta property="og:title" content="Share your dish — The Fridge Door Club by Mini Bites">
+<meta property="og:description" content="Pin your dish to Grandma's fridge in 30 seconds. No account needed.">
+<meta property="og:image" content="https://fridgedoorclub.com/img/og-image.jpg">
+<meta property="og:url" content="https://fridgedoorclub.com/share">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="/"><img src="/img/badge.webp" alt="Mini Bites" width="60" height="60"><span><b>The Fridge Door Club</b>by Mini Bites</span></a>
+<nav class="main" aria-label="Main"><a href="/fridge">The Fridge Door</a><a href="/recipes/depression-era-bread-pudding">Recipes</a><a href="/#letter">Sunday Letter</a><a class="btn" href="/share">Share your dish</a></nav>
+</div></header>
+<main id="main">
+<section class="block"><div class="narrow">
+<h1>Share your dish</h1>
+<p class="lead" style="margin-top:0">This week's theme is <strong>Kitchen Flop Friday</strong>. Proud plates are welcome too.</p>
+<form class="club" id="share" name="share-dish" method="POST" action="/api/submit">
+<p class="hidden"><label>Leave this empty <input name="company"></label></p>
+<div><span class="lbl">1. Your photo</span>
+<label class="drop" for="photo" id="dropzone"><svg aria-hidden="true" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#A3221B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="4"/></svg><strong>Tap here to choose a photo</strong><span>From your phone or computer</span><img id="preview" class="hidden" alt="Your photo"></label>
+<input id="photo" type="file" name="photo" accept="image/*" required style="margin-top:10px;font-size:.9rem"></div>
+<div><label for="kind">2. What kind of dish?</label>
+<select id="kind" name="kind"><option value="flop">A kitchen flop</option><option value="proud">A proud plate</option><option value="then">Then &amp; Now (a family recipe card and my dish)</option></select></div>
+<div class="row2">
+<div><label for="first">3. Your first name</label><input id="first" type="text" name="first_name" required maxlength="30" autocomplete="given-name" placeholder="Linda"></div>
+<div><label for="where">State or province</label><input id="where" type="text" name="state" required maxlength="40" placeholder="Ohio"></div>
+</div>
+<div><label for="story">4. The story, in one line</label><textarea id="story" name="story" rows="3" maxlength="200" required placeholder="My first pie crust. The dog liked it."></textarea></div>
+<div><label for="mail">Your email <span style="font-weight:400;font-size:.9rem">(only to tell you when your photo is on the fridge)</span></label><input id="mail" type="email" name="email" required autocomplete="email" placeholder="you@example.com"></div>
+<label class="check" for="ok"><input id="ok" type="checkbox" name="consent" value="yes" required><span>This is my own photo, and Mini Bites may show it on the Fridge Door and in its videos with my first name and state.</span></label>
+<label class="check" for="news"><input id="news" type="checkbox" name="sunday_letter" value="yes"><span>Also send me the Sunday Supper Letter.</span></label>
+<p id="msg" class="err hidden" role="alert"></p>
+<button class="btn big" type="submit" id="send">Pin it to the fridge</button>
+</form>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<span>The Fridge Door Club by Mini Bites</span>
+<nav aria-label="Footer"><a href="https://www.facebook.com/666734673182636" rel="noopener">Mini Bites on Facebook</a><a href="https://www.youtube.com/@minimalist_bites" rel="noopener">Mini Bites on YouTube</a><a href="/rules">Club rules</a><a href="/privacy">Privacy</a></nav>
+</div></footer>
+<script src="/js/share.js" defer></script>
+</body>
+</html>
