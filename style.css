@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lora:wght@400;600;700&display=swap');
-:root{--cream:#FAF3E3;--paper:#FFFDF7;--sand:#F3E7CC;--line:#E8D5AE;--red:#A3221B;--red-dark:#7A1812;--ink:#4A2C16;--mustard:#D9A21B;--avocado:#5F6B2E}
+:root{/* Mini Bites — Brand tokens */--cream:#FAF3E4;--paper:#FFFDF7;--sand:#F3E7CC;--line:#E4D6BE;--red:#A2221B;--red-dark:#7A1812;--ink:#4A2C16;--ink-muted:#7A5A40;--mustard:#E9A21B;--pumpkin:#C3601F;--glow:#FFD394;--avocado:#5F6B2E}
 *{box-sizing:border-box}
 html{font-size:20px}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:Lora,Georgia,serif;line-height:1.6}
@@ -79,3 +79,12 @@ footer.site a{color:var(--cream)}
 footer.site nav{display:flex;flex-wrap:wrap;gap:20px}
 @media (max-width:640px){html{font-size:19px}h1{font-size:2.3rem}.card{padding:26px 22px}.recipe-card{padding:24px 20px 24px 36px}}
 @media print{header.site,footer.site,.noprint{display:none}body{background:#fff}.recipe-card{box-shadow:none}}
+
+/* Brand caption components (same look as the Reels) */
+.titlebar{display:inline-block;background:var(--red);color:var(--cream);font-family:Kalam,cursive;font-weight:700;border-radius:18px;padding:6px 22px;font-size:1.3rem;line-height:1.3}
+.capcard{display:inline-block;background:rgba(250,243,228,.94);color:var(--ink);font-family:Kalam,cursive;font-weight:700;border-radius:18px;padding:10px 22px;box-shadow:0 4px 14px rgba(60,30,10,.18)}
+.event{background:var(--glow);border-top:6px solid var(--pumpkin)}
+.postlist{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+.postlist li{background:var(--paper);border:2px solid var(--line);border-radius:14px;padding:22px 26px}
+.postlist h3{font-family:Kalam,cursive;font-size:1.5rem;margin:0 0 6px;color:var(--red)}
+.postlist time{font-size:.85rem;color:var(--ink-muted)}

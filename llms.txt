@@ -1,0 +1,12 @@
+# The Fridge Door Club by Mini Bites
+
+> A friendly online club for home cooks who grew up on Grandma's cooking (mostly Americans and Canadians aged 45-75). Members share photos of their dishes, proud ones and flops, which are pinned to "the Fridge Door". Run by Mini Bites, a Facebook and Instagram page of old-fashioned American recipes told by "Grandma".
+
+## Sections
+- [The Fridge Door](https://fridgedoorclub.com/fridge): photos shared by members and by the Mini Bites kitchen.
+- [Grandma's Recipes](https://fridgedoorclub.com/recipes/): old-fashioned American classics with pantry ingredients and plain steps (Depression-era desserts, Thanksgiving sides, Sunday suppers).
+- [The Sunday Supper Letter](https://fridgedoorclub.com/letters/): weekly letters with a memory, a recipe, a kitchen tip and the week's favorite fridge photos.
+- [Share your dish](https://fridgedoorclub.com/share): send a photo and one line; free, no account.
+
+## Events
+- Thanksgiving Flop Friday, November 27, 2026: share the Thanksgiving dish that didn't go as planned.
